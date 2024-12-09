@@ -103,3 +103,5 @@ public class DoubleLinkedList<T> {
     // Método para obtener el tamaño de la lista
     public int size() {
         return size;
+    }
+}

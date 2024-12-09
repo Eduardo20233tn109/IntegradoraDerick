@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #0014a8;
+}
+
+.container-fluid {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centrando H1 */
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Espacio adicional debajo del título */
+}
+
+/* Contenedor de botones centrado */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilos para botones */
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Botón 1 */
+.btn1 {
+    border: 3px solid #FF00FF;
+    color: #FF00FF;
+}
+
+.btn1:before {
+    background-color: #FF00FF;
+}
+
+/* Botón 2 */
+.btn2 {
+    border: 3px solid #0014a8;
+    color: #0014a8;
+}
+
+.btn2:before {
+    background-color: #0014a8;
+}
+
+/* Efectos de hover y focus */
+button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    z-index: -1;
+}
+
+button:hover, button:focus {
+    color: white;
+}
+
+button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/* Efecto de clic */
+button:active {
+    transform: scale(0.9);
+}
